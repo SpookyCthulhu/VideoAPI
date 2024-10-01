@@ -14,6 +14,7 @@ Hosting:
 
 Uploading: 
   Videos can be uploaded by using postman, or by using the following command in curl:
+  
     curl -X POST http://<ipv4>:<port>/videos/upload/ \
      -H "Content-Type: multipart/form-data" \
      -F "title=<a_choosen_title>" \
@@ -21,8 +22,10 @@ Uploading:
 
 Downloading:
   Videos can be downloaded by either visiting the web address ending with the desired video id:
+  
     "http://<ipv4>:<port>/videos/download/<video_id>/
   OR videos can be downloaded in a similar way using Curl in the desired folder:
+  
     curl -o <desired_file_name_w/type> http://<ipv4>:<port>/videos/download/<video_id>/
 
 # License
